@@ -29,6 +29,8 @@ body {
     background-size: cover;
     height: 600px;
     margin-top: -20px;
+    background-repeat: no-repeat;
+    margin: auto;
 }
 
 .pone>.bg>.container>.pheader {
@@ -81,13 +83,15 @@ body {
 }
 
 @media (max-width:950px) {
-    .pone>.bg>.container{
+    .pone>.bg>.container {
         padding: 25px 5px 0px;
     }
+
     .pone>.bg>.container>.header {
         display: none;
     }
-    .pone>.bg>.container>.pheader>.icon:hover~.nav{
+
+    .pone>.bg>.container>.pheader>.icon:hover~.nav {
         display: block;
     }
 
@@ -103,7 +107,7 @@ body {
         height: 40px;
         align-self: center;
         text-align: center;
-        font-family:'Rubik', sans-serif;
+        font-family: 'Rubik', sans-serif;
         text-transform: capitalize;
         font-size: 20px;
         color: #ffaf35;
@@ -111,14 +115,15 @@ body {
         font-weight: 800;
         line-height: 40px;
     }
-    .pone>.bg>.container>.pheader>.logo::before{
+
+    .pone>.bg>.container>.pheader>.logo::before {
         content: "jo";
         color: #3eb8f4;
         font-style: italic;
     }
 
     .pone>.bg>.container>.pheader>.icon {
-        background:#ffaf35 ;
+        background: #ffaf35;
         width: 50px;
         text-align: center;
         color: white;
@@ -147,19 +152,22 @@ body {
         text-transform: capitalize;
         font-family: 'Poppins', sans-serif;
     }
+
     .pone>.bg>.container>.pheader>.sign>a {
         font-weight: 600;
         color: white;
     }
+
     .pone>.bg>.container>.pheader>.nav {
         grid-area: 2/1/2/5;
         display: none;
         position: absolute;
         right: 00px;
         border-radius: 10px;
-        padding: 0px ;
+        padding: 0px;
 
     }
+
     .pone>.bg>.container>.pheader>.nav>ul {
         list-style: none;
         text-align: center;
@@ -167,12 +175,14 @@ body {
         border-radius: 10px;
         width: 140px;
     }
+
     .pone>.bg>.container>.pheader>.nav>ul>li {
         padding: 10px;
         border: 1px solid white;
         background-image: var(--bgimage);
         border-radius: 10px;
     }
+
     .pone>.bg>.container>.pheader>.nav>ul>li>a {
         color: white;
         text-transform: capitalize;
@@ -180,39 +190,42 @@ body {
     }
 }
 
-.pone>.bg>.container>.text>h1{
+.pone>.bg>.container>.text>h1 {
     color: var(--maintext);
     font-family: var(--mainfont);
-    max-width:400px;
+    max-width: 400px;
     margin-top: 60px;
     font-size: 40px;
 }
-.pone>.bg>.container>.text>p{
+
+.pone>.bg>.container>.text>p {
     color: #a5a4a4bb;
     font-family: var(--secfont);
     margin-bottom: 20px;
 }
-.pone>.bg>.container>.text>div{
+
+.pone>.bg>.container>.text>div {
     background-color: white;
     height: 45px;
     border: 2px solid #9dbff2;
     border-radius: 20px;
-    max-width:380px;
+    max-width: 380px;
     position: relative;
     color: --;
     padding: 0px 0px 0px 2px;
     margin-top: 30px;
-    display:flex;
+    display: flex;
 
 }
-.pone>.bg>.container>.text>div:hover{
+
+.pone>.bg>.container>.text>div:hover {
     box-shadow: 0px 0px 20px 1px #9dbff2;
 }
 
-.pone>.bg>.container>.text>div>input{
-    background-color:white;
+.pone>.bg>.container>.text>div>input {
+    background-color: white;
     border: 0px solid white;
-    border-radius: 20px ;
+    border-radius: 20px;
     height: 40px;
     outline: none;
     width: 88%;
@@ -223,12 +236,14 @@ body {
     font-weight: 600;
     align-self: center;
 }
-.pone>.bg>.container>.text>div>input::placeholder{
+
+.pone>.bg>.container>.text>div>input::placeholder {
     padding: 10px;
     text-transform: capitalize;
     font-family: var(--secfont);
 }
-.pone>.bg>.container>.text>div>div{
+
+.pone>.bg>.container>.text>div>div {
     background-color: #ffaf35;
     display: inline-block;
     width: 30px;
@@ -238,215 +253,263 @@ body {
     border-radius: 50%;
     text-align: center;
 }
-.pone>.bg>.container>.text>div>div>i{
+
+.pone>.bg>.container>.text>div>div>i {
     line-height: 30px;
     color: white;
     text-align: center;
 }
+
 /*******************************PAGE TWO***************************/
-.ptwo>.container{
+.ptwo>.container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     max-width: 900px;
     margin: auto;
     padding: 10px;
 }
-.ptwo>.container>.img{
+
+.ptwo>.container>.img {
     background-image: url(../images/Vector\ SmartObject1.png);
     background-size: contain;
-    width: 40%;
+    min-width: 280px;
     height: 300px;
     background-repeat: no-repeat;
+    background-position: center;
 }
-.ptwo>.container>.text{
+
+.ptwo>.container>.text {
     width: 50%;
     align-self: center;
 }
-.ptwo>.container>.text>h1{
+
+.ptwo>.container>.text>h1 {
     font-family: var(--mainfont);
     color: var(--maintext);
     text-transform: capitalize;
 }
-.ptwo>.container>.text>p{
+
+.ptwo>.container>.text>p {
     font-family: var(--secfont);
     font-weight: 400;
-    color: #777;;
+    color: #777;
+    ;
     line-height: 1.8;
 
 }
+
 @media (max-width:650px) {
-    .ptwo>.container>.img{
-        display: none;
+    .ptwo>.container>.img {
+        display: block;
     }
-    .ptwo>.container>.text{
+
+    .ptwo>.container>.text {
         text-align: center;
         width: 100%;
     }
 }
+
 /*******************************PAGE Three***************************/
-.pthree>.container{
+.pthree>.container {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     max-width: 900px;
     margin: auto;
     padding: 10px;
 }
-.pthree>.container>.img{
+
+.pthree>.container>.img {
     background-image: url(../images/analytics.png);
     background-size: contain;
-    width: 40%;
+    min-width: 280px;
+    max-width: 400px;
     height: 300px;
     background-repeat: no-repeat;
+    background-position: center;
 }
-.pthree>.container>.text{
+
+.pthree>.container>.text {
     width: 50%;
     align-self: center;
 }
-.pthree>.container>.text>h1{
+
+.pthree>.container>.text>h1 {
     font-family: var(--mainfont);
     color: var(--maintext);
     text-transform: capitalize;
 }
-.pthree>.container>.text>p{
+
+.pthree>.container>.text>p {
     font-family: var(--secfont);
     font-weight: 400;
-    color: #777;;
+    color: #777;
+    ;
     line-height: 1.8;
 
 }
+
 @media (max-width:650px) {
-    .pthree>.container>.img{
-        display: none;
+    .pthree>.container>.img {
+        display: block;
     }
-    .pthree>.container>.text{
+
+    .pthree>.container>.text {
         text-align: center;
         width: 100%;
     }
+
+    .pthree>.container>.img {
+        order: -1;
+    }
 }
+
 /*******************************browse text ***************************/
-.browse>.container{
+.browse>.container {
     text-align: center;
     margin-top: 20px;
 }
-.browse>.container>h1{
+
+.browse>.container>h1 {
     font-family: var(--mainfont);
     color: var(--maintext);
     text-transform: capitalize;
     text-transform: capitalize;
 }
-.browse>.container>p{
+
+.browse>.container>p {
     font-family: var(--secfont);
     font-weight: 400;
-    color: #777;;
+    color: #777;
+    ;
     line-height: 1.8;
 }
+
 /*******************************page four ***************************/
-.pfour>.container{
+.pfour>.container {
     max-width: 800px;
 }
-.pfour>.container>.first{
+
+.pfour>.container>.first {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
     row-gap: 40px;
     margin-bottom: 50px;
 }
-.pfour>.container>.first>div{
+
+.pfour>.container>.first>div {
     cursor: pointer;
+    height: 270px !important;
 }
-.pfour>.container>.first>.one{
+
+.pfour>.container>.first>.one {
     background-color: white;
-    border: 2px solid transparent ;
+    border: 2px solid transparent;
     min-width: 240px;
     height: 240px;
     border-radius: 10px;
     padding-top: 20px;
-    filter: drop-shadow(0px 20px 53px rgba(33,138,218,0.12))
+    filter: drop-shadow(0px 20px 53px rgba(33, 138, 218, 0.12))
 }
-.pfour>.container>.first>.one:hover{
+
+.pfour>.container>.first>.one:hover {
     border: solid 2px #5b75fd;
 }
 
-.pfour>.container>.first>div{
+.pfour>.container>.first>div {
     margin: auto;
 }
-.pfour>.container>.first>.one>div{
+
+.pfour>.container>.first>.one>div {
     background-image: url(../images/Shape1.svg);
     background-size: cover;
     width: 100px;
     height: 100px;
     margin: auto;
 }
-.pfour>.container>.first>.one>h3{
-    text-align: center;
-    font-family: var(--secfont);
-    text-transform: capitalize;
-    color: var(--sectext);
-}
-.pfour>.container>.first>.one>p{
+
+.pfour>.container>.first>.one>h3 {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: var(--sectext);
 }
 
-.pfour>.container>.first>.two{
+.pfour>.container>.first>.one>p {
+    text-align: center;
+    font-family: var(--secfont);
+    text-transform: capitalize;
+    color: var(--sectext);
+}
+
+.pfour>.container>.first>.two {
     background-color: white;
-    border: 2px solid transparent ;
+    border: 2px solid transparent;
     min-width: 240px;
     height: 240px;
     border-radius: 10px;
     padding-top: 20px;
-    filter: drop-shadow(0px 20px 53px rgba(33,138,218,0.12));
+    filter: drop-shadow(0px 20px 53px rgba(33, 138, 218, 0.12));
     background-image: linear-gradient(180deg, #4dc7f5 0%, #5b75fd 100%);
     border: 0px solid transparent;
 
 }
-.pfour>.container>.first>.two>div{
+
+.pfour>.container>.first>.two>div {
     background-image: url(../images/Shape2.png);
     background-size: cover;
     width: 100px;
     height: 100px;
     margin: auto;
 }
-.pfour>.container>.first>.two>h3{
+
+.pfour>.container>.first>.two>h3 {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: white;
 }
-.pfour>.container>.first>.two>p{
+
+.pfour>.container>.first>.two>p {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: white;
 }
-.pfour>.container>.first>.three{
+
+.pfour>.container>.first>.three {
     background-color: white;
-    border: 2px solid transparent ;
+    border: 2px solid transparent;
     min-width: 240px;
     height: 240px;
     border-radius: 10px;
     padding-top: 20px;
-    filter: drop-shadow(0px 20px 53px rgba(33,138,218,0.12))
+    filter: drop-shadow(0px 20px 53px rgba(33, 138, 218, 0.12))
 }
-.pfour>.container>.first>.three:hover{
+
+.pfour>.container>.first>.three:hover {
     border: solid 2px #5b75fd;
 }
-.pfour>.container>.first>.three>div{
+
+.pfour>.container>.first>.three>div {
     background-image: url(../images/Shape3.png);
     background-size: cover;
     width: 125px;
     height: 110px;
     margin: auto;
+    margin-top: -10px;
 }
-.pfour>.container>.first>.three>h3{
+
+.pfour>.container>.first>.three>h3 {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: var(--sectext);
 }
-.pfour>.container>.first>.three>p{
+
+.pfour>.container>.first>.three>p {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
@@ -455,63 +518,73 @@ body {
 
 
 
-.pfour>.container>.first>.four{
+.pfour>.container>.first>.four {
     background-color: white;
-    border: 2px solid transparent ;
+    border: 2px solid transparent;
     min-width: 240px;
     height: 240px;
     border-radius: 10px;
     padding-top: 20px;
-    filter: drop-shadow(0px 20px 53px rgba(33,138,218,0.12))
+    filter: drop-shadow(0px 20px 53px rgba(33, 138, 218, 0.12))
 }
-.pfour>.container>.first>.four:hover{
+
+.pfour>.container>.first>.four:hover {
     border: solid 2px #5b75fd;
 }
-.pfour>.container>.first>.four>div{
+
+.pfour>.container>.first>.four>div {
     background-image: url(../images/Shape6.png);
     background-size: cover;
-    width: 125px;
-    height: 110px;
+    width: 140px;
+    height: 140px;
     margin: auto;
 }
-.pfour>.container>.first>.four>h3{
+
+.pfour>.container>.first>.four>h3 {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: var(--sectext);
 }
-.pfour>.container>.first>.four>p{
+
+.pfour>.container>.first>.four>p {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: var(--sectext);
 }
-.pfour>.container>.first>.five{
+
+.pfour>.container>.first>.five {
     background-color: white;
-    border: 2px solid transparent ;
+    border: 2px solid transparent;
     min-width: 240px;
     height: 240px;
     border-radius: 10px;
     padding-top: 20px;
-    filter: drop-shadow(0px 20px 53px rgba(33,138,218,0.12))
+    filter: drop-shadow(0px 20px 53px rgba(33, 138, 218, 0.12))
 }
-.pfour>.container>.first>.five:hover{
+
+.pfour>.container>.first>.five:hover {
     border: solid 2px #5b75fd;
 }
-.pfour>.container>.first>.five>div{
+
+.pfour>.container>.first>.five>div {
     background-image: url(../images/Shape5.png);
     background-size: cover;
     width: 125px;
-    height: 110px;
+    height: 130px;
     margin: auto;
 }
-.pfour>.container>.first>.five>h3{
+
+.pfour>.container>.first>.five>h3 {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: var(--sectext);
+    margin-top: 31px;
 }
-.pfour>.container>.first>.five>p{
+
+.pfour>.container>.first>.five>p {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
@@ -519,39 +592,46 @@ body {
 }
 
 
-.pfour>.container>.first>.six{
+.pfour>.container>.first>.six {
     background-color: white;
-    border: 2px solid transparent ;
+    border: 2px solid transparent;
     min-width: 240px;
     height: 240px;
     border-radius: 10px;
     padding-top: 20px;
-    filter: drop-shadow(0px 20px 53px rgba(33,138,218,0.12))
+    filter: drop-shadow(0px 20px 53px rgba(33, 138, 218, 0.12))
 }
-.pfour>.container>.first>.six:hover{
+
+.pfour>.container>.first>.six:hover {
     border: solid 2px #5b75fd;
 }
-.pfour>.container>.first>.six>div{
+
+.pfour>.container>.first>.six>div {
     background-image: url(../images/Shape4.png);
     background-size: cover;
-    width: 125px;
-    height: 110px;
+    width: 140px;
+    height: 130px;
     margin: auto;
 }
-.pfour>.container>.first>.six>h3{
+
+.pfour>.container>.first>.six>h3 {
+    text-align: center;
+    font-family: var(--secfont);
+    text-transform: capitalize;
+    color: var(--sectext);
+    margin-top: 31px;
+
+}
+
+.pfour>.container>.first>.six>p {
     text-align: center;
     font-family: var(--secfont);
     text-transform: capitalize;
     color: var(--sectext);
 }
-.pfour>.container>.first>.six>p{
-    text-align: center;
-    font-family: var(--secfont);
-    text-transform: capitalize;
-    color: var(--sectext);
-}
+
 /*******************************PAGE five***************************/
-.pfive>.container{
+.pfive>.container {
     display: flex;
     justify-content: space-around;
     max-width: 900px;
@@ -559,50 +639,60 @@ body {
     padding: 10px;
     margin-bottom: 20px;
 }
-.pfive>.container>.img{
+
+.pfive>.container>.img {
     background-image: url(../images/Ellipse.png);
     background-size: contain;
     width: 40%;
     height: 300px;
     background-repeat: no-repeat;
 }
-.pfive>.container>.text{
+
+.pfive>.container>.text {
     width: 50%;
     align-self: center;
 }
-.pfive>.container>.text>h1{
+
+.pfive>.container>.text>h1 {
     font-family: var(--mainfont);
     color: var(--maintext);
     text-transform: capitalize;
 }
-.pfive>.container>.text>p{
+
+.pfive>.container>.text>p {
     font-family: var(--secfont);
     font-weight: 400;
-    color: #777;;
+    color: #777;
+    ;
     line-height: 1.8;
 
 }
+
 @media (max-width:650px) {
-    .pfive>.container>.img{
+    .pfive>.container>.img {
         display: none;
     }
-    .pfive>.container>.text{
+
+    .pfive>.container>.text {
         text-align: center;
         width: 100%;
     }
 }
+
 /*******************************PAGE six***************************/
-.psix>div{
+.psix>div {
     background-image: url(../images/JOIN.png);
-    background-size: cover;
+    background-size: contain;
     height: 320px;
+    width: 100%;
     background-repeat: no-repeat;
     background-position: center;
     max-width: 1000px;
     margin: auto;
 }
+
 /*******************************PAGE final***************************/
-.box{
+.box {
     max-width: 800px;
     margin: auto;
     margin-top: 40px;
@@ -612,21 +702,26 @@ body {
     color: var(--sectext);
     padding: 0px 10px;
 }
-.box>#one{
+
+.box>#one {
     grid-area: 1/4;
     align-self: center;
     cursor: pointer;
 }
-.box>#two{
+
+.box>#two {
     grid-area: 1/3;
     align-self: center;
     cursor: pointer;
 
 }
-.box>#two:hover,.box>#one:hover{
+
+.box>#two:hover,
+.box>#one:hover {
     color: #4dc7f5;
 }
-.pfinal>.container{
+
+.pfinal>.container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -639,24 +734,29 @@ body {
     padding: 0px 20px;
 
 }
-.pfinal>.container>div{
+
+.pfinal>.container>div {
     width: 240px;
     height: 260px;
-    box-shadow: 0px 0px 10px 0.2px rgba(33,138,218,0.12);
+    box-shadow: 0px 0px 10px 0.2px rgba(33, 138, 218, 0.12);
     border: 0px solid transparent;
-    border-radius:20px ;
+    border-radius: 20px;
     padding-top: 20px;
     margin: auto;
 }
 
-.pfinal>.container>.two>:first-child{
+.pfinal>.container>.two>:first-child {
     background-image: url(../images/client2.png) !important;
 
 }
-.pfinal>.container>.three>:first-child{
+
+.pfinal>.container>.three>:first-child {
     background-image: url(../images/client3.png) !important;
 }
-.pfinal>.container>.one>:first-child,.pfinal>.container>.two>:first-child,.pfinal>.container>.three>:first-child{
+
+.pfinal>.container>.one>:first-child,
+.pfinal>.container>.two>:first-child,
+.pfinal>.container>.three>:first-child {
     background-image: url(../images/client1.png);
     background-size: cover;
     background-repeat: none;
@@ -669,28 +769,38 @@ body {
     margin-bottom: 20px;
 
 }
-.pfinal>.container>.one>.icons,.pfinal>.container>.two>.icons,.pfinal>.container>.three>.icons{
+
+.pfinal>.container>.one>.icons,
+.pfinal>.container>.two>.icons,
+.pfinal>.container>.three>.icons {
     text-align: center;
 }
-.pfinal>.container>.one>.icons>i,.pfinal>.container>.two>.icons>i,.pfinal>.container>.three>.icons>i{
+
+.pfinal>.container>.one>.icons>i,
+.pfinal>.container>.two>.icons>i,
+.pfinal>.container>.three>.icons>i {
     color: #ffaf35;
     text-align: center;
 }
-.pfinal>.container>.one>p,.pfinal>.container>.two>p,.pfinal>.container>.three>p{
+
+.pfinal>.container>.one>p,
+.pfinal>.container>.two>p,
+.pfinal>.container>.three>p {
     font-family: var(--mainfont);
     font-weight: 400;
     text-align: center;
     margin: auto;
     margin-top: 20px;
     color: var(--sectext);
-    width:200px;
+    width: 200px;
 }
+
 /*******************************footer***************************/
-.footer>.bg{
+.footer>.bg {
     background-image: url(../images/FOOTER.png);
     background-size: auto;
     width: 100%;
-    height:50px;
+    height: 50px;
     margin-bottom: -40px;
     background-position: center;
     margin: auto;
@@ -698,16 +808,15 @@ body {
     justify-content: center;
 
 }
+
 /*******************************social***************************/
-.footer>.bg>a{
+.footer>.bg>a {
     font-size: 40px;
     color: white;
-    margin:0px 5px ;
+    margin: 0px 5px;
     align-self: center;
 }
-.footer>.bg>a:hover{
-    color:#ffaf35;
+
+.footer>.bg>a:hover {
+    color: #ffaf35;
 }
-
-
-
